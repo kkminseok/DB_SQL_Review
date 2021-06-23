@@ -6,9 +6,8 @@ SQL문법에 대한 정리, 문제풀이 문서입니다.
 
 
 -----
-
-푼 문제 : <https://leetcode.com/problems/combine-two-tables/>  
 leetcode 175번 - Combine Two Table  
+푼 문제 : <https://leetcode.com/problems/combine-two-tables/>  
 푼 링크 : <https://kkminseok.github.io/posts/leetcode_Combine_Two_Tables/>
 
 
