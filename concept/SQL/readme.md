@@ -45,8 +45,9 @@ SELECT count(distinct first_name) FROM employees.employees;
 
 ------  
 
-## WHERE(<, >, ≥, ≤, <>는 ≠,  Like, BETWEEN, IN, AND, OR , NOT)
+<summary>WHERE(<, >, ≥, ≤, <>는 ≠,  Like, BETWEEN, IN, AND, OR , NOT)</summary>
 
+```
 
 특이점으로 BETWEEN은 (x,y] 표기법이다. → x**초과** y**이하**
 
@@ -77,3 +78,4 @@ BETWEEN 결과 :
 
 ![](where/BETWEEN.JPG)  
 
+```
