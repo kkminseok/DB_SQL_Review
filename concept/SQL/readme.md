@@ -45,39 +45,38 @@ SELECT count(distinct first_name) FROM employees.employees;
 
 ------  
 
-<detail>
-    <summary>WHERE(<, >, ≥, ≤, <>는 ≠,  Like, BETWEEN, IN, AND, OR , NOT)</summary>
 
-    ```
+WHERE(<, >, ≥, ≤, <>는 ≠,  Like, BETWEEN, IN, AND, OR , NOT)
 
-    특이점으로 BETWEEN은 (x,y] 표기법이다. → x**초과** y**이하**
+    
 
-
-    NOT 뒤에 조건이 오는 것.
+특이점으로 BETWEEN은 (x,y] 표기법이다. → x**초과** y**이하**
 
 
-    ```SQL
-    SELECT * FROM employees.employees where emp_no = 10001;
-    SELECT * FROM employees.employees where emp_no > 10500;
-    SELECT * FROM employees.employees where emp_no < 10500;
-    SELECT * FROM employees.employees where emp_no >= 10500;
-    SELECT * FROM employees.employees where emp_no <= 10500;
-    SELECT * FROM employees.employees where emp_no <> 10500;
-    SELECT * FROM employees.employees where emp_no BETWEEN 10000 and 10100;
-    SELECT * FROM employees.employees where last_name LIKE('Facello');
-    SELECT * FROM employees.employees where emp_no IN (10001,10005);
-    SELECT * FROM employees.employees where last_name = 'Facello' or last_name = 'Simmel';
-    SELECT * FROM employees.employees where last_name = 'Facello' or first_name = 'Bezalel';
-    SELECT * FROM employees.employees where NOT last_name = 'Facello';
-    SELECT * FROM employees.employees 
-    where last_name = 'Facello' and (emp_no > 14900 or emp_no < 10100);
-    SELECT * FROM employees.employees 
-    where NOT last_name = 'Facello' and NOT emp_no > 20000;
-    ```
+NOT 뒤에 조건이 오는 것.
 
-    BETWEEN 결과 : 
 
-    ![](where/BETWEEN.JPG)  
+```SQL
+SELECT * FROM employees.employees where emp_no = 10001;
+SELECT * FROM employees.employees where emp_no > 10500;
+SELECT * FROM employees.employees where emp_no < 10500;
+SELECT * FROM employees.employees where emp_no >= 10500;
+SELECT * FROM employees.employees where emp_no <= 10500;
+SELECT * FROM employees.employees where emp_no <> 10500;
+SELECT * FROM employees.employees where emp_no BETWEEN 10000 and 10100;
+SELECT * FROM employees.employees where last_name LIKE('Facello');
+SELECT * FROM employees.employees where emp_no IN (10001,10005);
+SELECT * FROM employees.employees where last_name = 'Facello' or last_name = 'Simmel';
+SELECT * FROM employees.employees where last_name = 'Facello' or first_name = 'Bezalel';
+SELECT * FROM employees.employees where NOT last_name = 'Facello';
+SELECT * FROM employees.employees 
+where last_name = 'Facello' and (emp_no > 14900 or emp_no < 10100);
+SELECT * FROM employees.employees 
+where NOT last_name = 'Facello' and NOT emp_no > 20000;
+```
 
-    ```
-</detail>
+BETWEEN 결과 : 
+
+![](where/BETWEEN.JPG)  
+
+
