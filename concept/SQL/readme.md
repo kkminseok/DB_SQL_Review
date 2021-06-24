@@ -46,7 +46,7 @@ SELECT count(distinct first_name) FROM employees.employees;
 ------  
 
 
-WHERE(<, >, ≥, ≤, <>는 ≠,  Like, BETWEEN, IN, AND, OR , NOT)
+## WHERE(<, >, ≥, ≤, <>는 ≠,  Like, BETWEEN, IN, AND, OR , NOT)
 
     
 
